@@ -5,7 +5,7 @@ redact = gets.chomp
 words = text.split(" ")
 
 words.each do |words|
-    if words != "REDACTED"
+    if words != redact
     print "#{words}" + " "
     else
     print "REDACTED"
